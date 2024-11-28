@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: pop;
+    src: url(./Poppins-Regular.ttf);
+}
+
+
+
+.meda-content {
+    font-size: 62.5%;
+    background: url(./bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: pop;
+}
+
+.my-main {
+    height: 100vh;
+    width: 90vw;
+    /* background-color: orange; */
+    
+}
+
+#navi {
+   
+    margin-top: 1rem;
+    display: flex;
+     gap: 30px;
+     list-style: none;
+     font-size: 1.2rem;
+     cursor: pointer;
+     
+}
+
+#navi > li:hover {
+    color: rgb(255, 0, 200);
+    filter: drop-shadow(1px 1px 10px rgba(255, 0, 212, 0.836));
+    
+}
+
+
+.sections {
+    height: 100%;
+    width: 100%;
+    /* background-color: gold; */
+ 
+    display: flex;
+}
+
+.left-section {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.left-section > .container1 > .button {
+
+    padding: .6rem 1.8rem;
+  margin-top: 1rem;
+    width: fit-content;
+    font-size: 1.5rem;
+    color: rgb(32, 32, 32);
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    border: .1rem black solid;
+    cursor: not-allowed;
+    filter: drop-shadow(1px 1px 5px rgba(255, 0, 211, 0.836));
+    background: linear-gradient( rgba(255, 0, 221, 0.836), rgba(0, 140, 255, 0.822));
+
+}
+
+.left-section > .container1 {
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+    justify-content: space-around;
+
+  
+
+}
+
+.heading {
+    color: white;
+    font-size: 3rem;
+    white-space: pre-line;
+
+}
+.para {
+    font-size: 1.3rem;
+    width: 70%;
+    color: rgb(185, 185, 185);
+}
+
+@media only screen and (max-width: 600px) {
+   
+   .meda-content {
+    font-size: 45%;
+   }
+   
+    .navibar {
+    height: 7rem;
+    width: 100%;
+    position: fixed;
+   
+   }
+
+   #navi {
+ display: none;
+   }
+
+   .left-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    align-items: start;}
+
+   .meda-content {
+    
+    background-position: center center;
+    background-size: 100% 100%;
+    
+   
+   
+
+   .heading {
+    
+    width: 100%;
+    height: 40%;
+    font-size: 2rem;
+   }
+
+.para {
+    margin: 0;
+    padding: 0;
+}
+
+
+}
+
+}
